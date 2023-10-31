@@ -15,6 +15,12 @@ function App() {
           <Article />
           <Article />
           <Article />
+          <Article />
+          <Article />
+          <Article />
+          <Article />
+          <Article />
+          <Article />
         </MainStyle>
       </div>
     </>
@@ -22,14 +28,13 @@ function App() {
 }
 
 const MainStyle = styled.main`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   width: calc(100% - 4rem);
   margin: 20px auto 0;
   padding: 2rem;
-  article {
-    width: 30%;
-  }
+  gap: 10px;
   &.active {
     background: red;
   }

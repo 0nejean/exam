@@ -32,12 +32,14 @@ const NavStyle = styled.nav`
   }
   a {
     display: block;
-    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 2rem;
 
     text-decoration: none;
     color: black;
     &:hover {
-      color: blue;
+      color: #da8aa8;
     }
   }
 `;

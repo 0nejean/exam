@@ -5,7 +5,7 @@ function Header() {
   return (
     <HeaderStyle>
       <h1 id="logo">
-        <a href="/">logo</a>
+        <a href="/">React Exam</a>
       </h1>
       <Nav />
     </HeaderStyle>
@@ -20,11 +20,19 @@ const HeaderStyle = styled.header`
   padding: 0 2rem;
   border-bottom: 1px solid #ddd;
   #logo {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+
     a {
       display: block;
       text-decoration: none;
-      color: blue;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      color: transparent;
+      &:hover {
+        color: #f00861;
+        -webkit-text-stroke-color: transparent;
+      }
     }
   }
 `;
